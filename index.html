@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <title>realStateAsh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="head">
+        <ul class="header">
+            <li><a href="#">Rezilla, 18 Grattan St, Brooklyn</a></li>
+            <li><a href="#">+1 206-214-2298</a></li>
+            <li><a href="#">support@rezilla.com</a></li>
+        </ul>
+    </header>
+
+    <nav>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Listings</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+        </div>
+
+        <ul class="logo">
+            <li><a href="#">Logo</a></li>
+        </ul>
+
+        <div id="endMenu" class="menu">
+            <ul>
+                <li><a href="#">Login/Register</a></li>
+                <li><a href="#">Add Listing</a></li>
+            </ul>
+        </div>
+
+        <button class="menuBtn" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+        
+        <div>
+            <ul class="sideMenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Listings</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Login/Register</a></li>
+                <li><a href="#">Add Listings</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    
+    <main>
+        <div class="cover">
+            <div class="firstEl">
+                <h4>REAL STATE</h4>
+                <h2>Find a perfect
+                    home you love..!
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde hic temporibus magnam harum totam voluptate iste cumque. </p>
+            </div>
+            
+            <section>
+                <div class="carousel" data-carousel>
+                    <button class="carouselBtn next" data-carouselBtn = "next">&#8594;</button>
+                    <button class="carouselBtn prev" data-carouselBtn = "prev">&#8592;</button>
+                    <ul data-slides>
+                        <li class="slide" data-active><img src="house1.jpeg" alt="House image #1"></li>
+                        <li class="slide"><img src="house2.jpeg" alt="House image #2"></li>
+                        <li class="slide"><img src="house3.jpeg" alt="House image #3"></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="semiCircle"></div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
