@@ -66,19 +66,59 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde hic temporibus magnam harum totam voluptate iste cumque. </p>
             </div>
             
+            <div class="semiCircle"></div>
             <section>
                 <div class="carousel" data-carousel>
                     <button class="carouselBtn next" data-carouselBtn = "next">&#8594;</button>
                     <button class="carouselBtn prev" data-carouselBtn = "prev">&#8592;</button>
-                    <ul data-slides>
-                        <li class="slide" data-active><img src="house1.jpeg" alt="House image #1"></li>
-                        <li class="slide"><img src="house2.jpeg" alt="House image #2"></li>
-                        <li class="slide"><img src="house3.jpeg" alt="House image #3"></li>
-                    </ul>
+                    <div data-slides>
+                        <div class="slide" data-active><img src="house1.jpeg" alt="House image #1"></div>
+                        <div class="slide" ><img src="house2.jpeg" alt="House image #2"></div>
+                        <div class="slide"><img src="house3.jpeg" alt="House image #3"></div>
+                    </div>
                 </div>
             </section>
         </div>
-        <div class="semiCircle"></div>
+        <div class="listings">
+            <div class="sale">
+                <form action="index.html" onclick="show">
+                    <button id="sale">For Sale</button>
+                    <div class="formBox">
+                        <input type="text" name="location" required maxlength="50" 
+                        placeholder="New York, San Francisco, etc" class="input">                
+                    </div>
+                    <div class="formBox">
+                        <select name="type" id="sale" required>
+                            <option value="" selected disabled hidden>Select Property Type</option>
+                            <option value="flat">Flat</option>
+                            <option value="house">House</option>
+                            <option value="shop">Shop</option>
+                        </select>
+                    </div>
+                    <div class="formBox">
+                        <select name="type" id="sale" required>
+                            <option value="" selected disabled hidden>Select Rooms</option>
+                            <option value="room1">1</option>
+                            <option value="room2">2</option>
+                            <option value="room3">3</option>
+                            <option value="room4">4</option>
+                            <option value="room5+">5+</option>
+                        </select>
+                    </div>
+                    <div class="formBox">
+                        <button class="search">Search</button>
+                    </div>
+            </div>
+            <!-- <div id="sale">
+                <button class="sale" onclick="show">For Sale</button>
+            </div>
+            <div id="rent">
+                <button class="rent" onclick="show">For Rent</button>
+            </div>
+            <div>
+                <button class="search">Search</button>
+            </div> -->
+        </div>
     </main>
     <script src="index.js"></script>
 </body>

@@ -161,12 +161,12 @@ nav ul{
 }
 
 .cover h4, h2,p{
-    padding-left: 80px;
+    padding-left: 160px;
 }
 
 .cover h4{
     max-width: 200px;
-    padding-top: 100px;
+    padding-top: 90px;
     color: purple;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -205,15 +205,15 @@ nav ul{
 
 .semiCircle{
     width: 100vw;
-    height: 600px;
+    height: 720px;
     background: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
-    border-radius: 0 0 600px 600px;
-    position: fixed;
+    border-radius: 0 0 700px 700px;
+    position: absolute;
 }
 
 .carousel{
-    width: 100vw;
-    height: 100vh;
+    width: 70%;
+    height: 40vh;
     position: relative;
     display: flex;
     justify-content: left;
@@ -230,18 +230,24 @@ nav ul{
 
 .slide > img{
     display: block;
-    height: 30%;
-    margin-left: 30px;
-    margin-top: 10px;
+    height: 100%;
+    margin-left: 110px;
+    margin-top: 20px;
     object-fit: cover;
-    object-position: left;
+    /* object-position: left; */
+}
+
+.slide img{
+    max-width: 430px;
+    max-height: 300px;
+    border-radius: 20px;
 }
 
 .slide[data-active]{
     opacity: 1;
 }
 
-.carousel > ul{
+.carousel > div{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -251,7 +257,7 @@ nav ul{
     background: none;
     border: none;
     font-size: 2rem;
-    top: 17%;
+    top: 7%;
     z-index: 2;
     transform: translateY(-50%);
     color: rgba(255, 255, 255, 0.5);
@@ -259,6 +265,7 @@ nav ul{
     border-radius: .25rem;
     padding: 0 .5rem;
     background-color: rgba(0, 0, 0, 0.2);
+    align-self: center;
 }
 
 .carouselBtn:hover, .carouselBtn:focus{
@@ -271,53 +278,73 @@ nav ul{
 }
 
 .carouselBtn.prev{
-    left: 0rem;
+    left: 5rem;
 }
 
 .carouselBtn.next{
-    right: -23rem;
+    right: -30rem;
 }
 
+.listings .sale{
+    min-height: 50vh;
+    display: flex;
+}
 
+/* mobile */
 @media (max-width: 768px){
+    .carousel{
+        width: 100%;
+    }
+
     .cover h2, h4, .firstEl{
         position: center;
         align-items: center;
         font-size: 40px;
         max-width: 600px;
-        padding: auto;
+        margin-left: -35px;
     }
     .cover p{
         font-size: 20px;
         max-width: 600px;
+        margin-left: -35px;
     }
     .cover h2{
-        padding-top: 10px;
+        margin-top: 5px;
     }
 
     .slide > img{
-        object-fit: contain;
+        /* object-fit: contain; */
         object-position: center;
         margin-top: 10px;
-        /* margin: auto; */
-        width: 100vw;
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    .slide img{
+        max-width: 520px;
+        max-height: 600px;
+        border-radius: 50px 50px 60px 60px;
     }
 
     .carouselBtn.prev{
-        left: 10rem;
+        left: 1rem;
     }
     
     .carouselBtn.next{
-        right: -543rem;
+        right: -32rem;
     }
 }
 
 @media (max-width: 560px) {
+    .carousel{
+        width: 100%;
+    }
     .slide > img {
         object-position: center;
-        margin: auto;
+        margin-left: 20px;
         margin-top: 20px;
         width: 90%;
+        border-radius: 20px 20px 60px 60px;
     }
 
     .cover h2, h4, .firstEl{
@@ -338,10 +365,10 @@ nav ul{
     }
 
     .carouselBtn.prev{
-        left: 2.5rem;
+        left: -1rem;
     }
     
     .carouselBtn.next{
-        right: -26.2rem;
+        right: -26rem;
     }
 } 
